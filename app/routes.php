@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('/', function()
-{
+Route::get('/', function() {
+	$data = array('title' => 'Bienvenido', 'sub' => '');
 	return View::make('admin.index')
-		->with('title', 'Bienvenido');
+		->with($data);
+});
+
+Route::get('encuesta', function() {
+	$data = array('title' => 'Encuesta', 'sub' => 'clientes');
+	return View::make('admin.encuesta')
+		->with($data);
 });
 

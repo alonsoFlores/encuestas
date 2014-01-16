@@ -44,6 +44,7 @@
 <!-- page specific -->
 <script src="js/index.js"></script>
 <script src="js/chat.js"></script>
+<script src="js/wizard.js"></script>
 
 <script type="text/template" id="message-template">
         <div class="sender pull-left">
