@@ -1,55 +1,47 @@
 <!-- jquery and friends -->
-<script src="lib/jquery/jquery-2.0.3.min.js"> </script>
+<script src={{URL::asset("lib/jquery/jquery-2.0.3.min.js")}}> </script>
 
 
 <!-- jquery plugins -->
-<script src="lib/icheck.js/jquery.icheck.js"></script>
-<script src="lib/sparkline/jquery.sparkline.js"></script>
-<script src="lib/jquery-ui-1.10.3.custom.js"></script>
-<script src="lib/jquery.slimscroll.js"></script>
-
-<!-- d3, nvd3-->
-<script src="lib/nvd3/lib/d3.v2.js"></script>
-<script src="lib/nvd3/nv.d3.custom.js"></script>
-
-<!-- nvd3 models -->
-<script src="lib/nvd3/src/models/scatter.js"></script>
-<script src="lib/nvd3/src/models/axis.js"></script>
-<script src="lib/nvd3/src/models/legend.js"></script>
-<script src="lib/nvd3/src/models/multiBar.js"></script>
-<script src="lib/nvd3/src/models/multiBarChart.js"></script>
-<script src="lib/nvd3/src/models/line.js"></script>
-<script src="lib/nvd3/src/models/lineChart.js"></script>
-<script src="lib/nvd3/stream_layers.js"></script>
+<script src={{URL::asset("lib/jquery-maskedinput/jquery.maskedinput.js")}}></script>
+<script src={{URL::asset("lib/parsley/parsley.js")}}> </script>
+<script src={{URL::asset("lib/icheck.js/jquery.icheck.js")}}></script>
+<script src={{URL::asset("lib/select2.js")}}></script>
 
 <!--backbone and friends -->
-<script src="lib/backbone/underscore-min.js"></script>
-<script src="lib/backbone/backbone-min.js"></script>
-<script src="lib/backbone/backbone.localStorage-min.js"></script>
+<script src={{URL::asset("lib/backbone/underscore-min.js")}}></script>
 
 <!-- bootstrap default plugins -->
-<script src="lib/bootstrap/transition.js"></script>
-<script src="lib/bootstrap/collapse.js"></script>
-<script src="lib/bootstrap/alert.js"></script>
-<script src="lib/bootstrap/tooltip.js"></script>
-<script src="lib/bootstrap/popover.js"></script>
-<script src="lib/bootstrap/button.js"></script>
-<script src="lib/bootstrap/tab.js"> </script>
-<script src="lib/bootstrap/dropdown.js"></script>
+<script src={{URL::asset("lib/bootstrap/transition.js")}}></script>
+<script src={{URL::asset("lib/bootstrap/collapse.js")}}></script>
+<script src={{URL::asset("lib/bootstrap/alert.js")}}></script>
+<script src={{URL::asset("lib/bootstrap/tooltip.js")}}></script>
+<script src={{URL::asset("lib/bootstrap/popover.js")}}></script>
+<script src={{URL::asset("lib/bootstrap/button.js")}}></script>
+<script src={{URL::asset("lib/bootstrap/tab.js")}}></script>
+<script src={{URL::asset("lib/bootstrap/dropdown.js")}}></script>
+<script src={{URL::asset("lib/bootstrap/modal.js")}}></script>
 
+<!-- bootstrap custom plugins -->
+<script src={{URL::asset("lib/bootstrap-datepicker.js")}}></script>
+<script src={{URL::asset("lib/bootstrap-select/bootstrap-select.js")}}></script>
+<script src={{URL::asset("lib/wysihtml5/wysihtml5-0.3.0_rc2.js")}}></script>
+<script src={{URL::asset("lib/bootstrap-wysihtml5/bootstrap-wysihtml5.js")}}></script>
+<script src={{URL::asset("lib/bootstrap-switch.js")}}></script>
+<script src={{URL::asset("lib/bootstrap-colorpicker.js")}}></script>
+<script src={{URL::asset("lib/jquery.bootstrap.wizard.js")}}></script>
 <!-- basic application js-->
-<script src="js/app.js"></script>
-<script src="js/settings.js"></script>
+<script src={{URL::asset("js/app.js")}}></script>
+<script src={{URL::asset("js/settings.js")}}></script>
 
 <!-- page specific -->
-<script src="js/index.js"></script>
-<script src="js/chat.js"></script>
-<script src="js/wizard.js"></script>
+<script src={{URL::asset("js/wizard.js")}}></script>
+<script src={{URL::asset("js/forms.js")}}></script>
 
 <script type="text/template" id="message-template">
         <div class="sender pull-left">
             <div class="icon">
-                <img src="img/2.jpg" class="img-circle" alt="">
+                <img src={{URL::asset("img/2.jpg")}} class="img-circle" alt="">
             </div>
             <div class="time">
                 just now

@@ -11,15 +11,9 @@
 |
 */
 
-Route::get('/', function() {
-	$data = array('title' => 'Bienvenido', 'sub' => '');
-	return View::make('admin.index')
-		->with($data);
-});
+Route::get('', 'AdminController@home');
 
-Route::get('encuesta', function() {
-	$data = array('title' => 'Encuesta', 'sub' => 'clientes');
-	return View::make('admin.encuesta')
-		->with($data);
-});
+Route::get('admin/usuarios', 'UsuarioController@nuevo');
+
+Route::get('encuesta', 'EncuestaController@nueva');
 

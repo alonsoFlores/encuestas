@@ -6,8 +6,8 @@
         </li>
     </ul>
     <ul id="side-nav" class="side-nav">
-        <li class="{{ Request::is( 'encuesta') ? 'active' : '' }}">
-            <a href="encuesta"><i class="fa fa-question"></i> <span class="name">Encuesta</span></a>
+        <li class="{{ Request::is( 'usuarios') ? 'active' : '' }}">
+            <a href="usuarios"><i class="fa fa-group"></i> <span class="name">Usuarios</span></a>
         </li>
     </ul>
 </nav>
