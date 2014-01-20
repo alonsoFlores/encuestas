@@ -6,8 +6,8 @@
         </li>
     </ul>
     <ul id="side-nav" class="side-nav">
-        <li class="{{ Request::is( 'usuarios') ? 'active' : '' }}">
-            <a href="usuarios"><i class="fa fa-group"></i> <span class="name">Usuarios</span></a>
+        <li class="{{ Request::is( 'admin/usuarios') ? 'active' : '' }}">
+            <a href="/admin/usuarios"><i class="fa fa-group"></i> <span class="name">Usuarios</span></a>
         </li>
     </ul>
 </nav>
